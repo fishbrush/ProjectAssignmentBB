@@ -1,14 +1,83 @@
-.backgroundhome{
-    height: 100vh;
-    background: linear-gradient(rgb(71, 151, 60, 0.2),rgba(0,0,0,0.2)),url("https://picsum.photos/id/696/1950/900") 50%, no-repeat;
-    position: relative;
+/* home page layout code */
+
+.backgroundhome {
+  height: 100vh;
+  background: linear-gradient(rgb(71, 151, 60, 0.2), rgba(0, 0, 0, 0.2)),
+    url("https://picsum.photos/id/696/1950/900") 50%, no-repeat;
+  position: relative;
 }
 
-.centerblockhome{
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-    width: 100%;
+.centerblockhome {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+/* about page layout code */
+
+.header-a{
+  height: 15%;
+}
+
+.header-a nav{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 40px;
+}
+
+.main-a{
+  padding: 20px;
+}
+
+.video{
+  margin-top: 1%;
+  margin-bottom: 2%;
+  width: 80vw;
+  height:70vh;
+}
+
+.footer-a{
+  height: 10%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+/* layout for contact page */
+
+.header-c{
+  background-color: slateblue;
+  grid-area: header;
+}
+
+.aside-c{ 
+  background-color: plum;
+  grid-area: aside;
+}
+
+.main-c{
+  background-color: pink;
+  grid-area: main;
+}
+
+.footer-c{
+  background-color: powderblue;
+  grid-area: footer;
+}
+
+.container-c{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 1fr 100px;
+  grid-template-areas: 
+  "header header header"
+  "aside main main"
+  "footer footer footer"
+  ;
 }

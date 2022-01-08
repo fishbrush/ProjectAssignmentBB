@@ -1,8 +1,9 @@
-function colorPicker(){
-   let color=document.querySelector("#color").value
-   document.body.style.backgroundColor = color
+document.querySelector("#addbtn").onclick=function(){
+   const value = document.querySelector("#add").value
+   const list = document.querySelector("#addlist")
+   const li = document.createElement("li")
+   li.textContent=value
+   list.appendChild(li),reset()
 }
 
-document.querySelector("#text").onkeyup=function(event){
-console.log(event.target)
-}
+

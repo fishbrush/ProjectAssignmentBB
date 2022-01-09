@@ -1,5 +1,4 @@
-/* home page layout code */
-
+/* HOME PAGE LAYOUT CODE */
 .backgroundhome {
   height: 100vh;
   background: linear-gradient(rgb(71, 151, 60, 0.2), rgba(0, 0, 0, 0.2)),
@@ -16,15 +15,28 @@
   width: 100%;
 }
 
-/* about page layout code */
-
-.header-a{
+/* ABOUT PAGE LAYOUT CODE */
+.header-a {
   height: 17%;
 }
 
+.main-a {
+  padding: 20px;
+}
+
+.h2-a{
+  margin-bottom: 2%;
+  }
+
+.video {
+  margin-top: 1%;
+  width: 60vw;
+  height: 70vh;
+}
+
+/* ABOUT & CONTACT PAGE LAYOUT */
 .header-a nav,
-.header-c nav
-{
+.header-c nav {
   height: 100%;
   display: flex;
   justify-content: center;
@@ -32,132 +44,110 @@
   column-gap: 40px;
 }
 
-.main-a{
-  padding: 20px;
-}
-
-.video{
-  margin-top: 1%;
-  width: 60vw;
-  height:70vh;
- }
-
- /* about & contact page footer layout */
- footer{
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* layout for contact page */
-
 .header-a,
-.header-c{
+.header-c {
   background: linear-gradient(rgb(71, 151, 60, 0.2), rgba(0, 0, 0, 0.2)),
     url("https://picsum.photos/id/696/1950/900") 50%, no-repeat;
   position: relative;
 }
 
-.header-c{
+.main-a,
+.footer-a,
+.aside-c,
+.main-c,
+.footer-c {
+  background-color: rgb(61, 85, 57);
+}
+
+/*LAYOUT FOR CONTACT PAGE*/
+
+.header-c {
   grid-area: header;
 }
 
-.aside-c{ 
+.aside-c {
   grid-area: aside;
 }
 
-.main-c{
+.main-c {
   grid-area: main;
 }
 
-.footer-c{
+.footer-c {
   grid-area: footer;
 }
 
-.container-c{
+.container-c {
   height: 100vh;
 }
 
-.map{
+.map {
   margin-top: 15px;
 }
 
-.list-c{
+.list-c {
   padding-left: 5%;
   padding-top: 2%;
-  }
+}
 
-  .list-c legend{
-    padding-bottom: 1%;
-    text-transform: capitalize;
-    font-size: 1.5em;
-    color:rgb(255, 255, 255);
-  }
+.list-c legend {
+  padding-bottom: 1%;
+  font-size: 1.5em;
+}
 
-  .list-c label{
-    text-transform: capitalize;
-    font-size: 1em;
-    color:rgb(255, 255, 255);
-  }
+.list-c label {
+  font-size: 1em;
+}
 
-  .list-c input{
-    width: 30%;
-    height: 30px;
-    padding-left: 5px;
-  }
+.list-c input {
+  width: 40%;
+  height: 30px;
+  padding-left: 5px;
+}
 
-  .list-c ul{
-    padding-left: 10%;
-    color:rgb(255, 255, 255);
-  }
+.list-c ul {
+  padding-left: 10%;
+  color: rgb(255, 255, 255);
+}
 
-  button{
-    width: 10%;
-    height: 30px;
-    text-transform: capitalize;
-    background-color: rgb(192, 238, 194);
-  }
+button {
+  width: 10%;
+  height: 30px;
+  text-transform: capitalize;
+  background-color: rgb(192, 238, 194);
+}
 
-@media(min-width:800px){
-  .container-c{
+/* CONTACT PAGE DISPLAY FOR FULL PAGE OVER 800PX */
+@media (min-width: 800px) {
+  .container-c {
     display: grid;
     grid-template-columns: 15% 20% 1fr 1fr;
     grid-template-rows: 17% 1fr 10%;
-    grid-template-areas: 
-    "header header header header"
-    "aside aside main main"
-    "footer footer footer footer"
-    ;
+    grid-template-areas:
+      "header header header header"
+      "aside aside main main"
+      "footer footer footer footer";
   }
 }
 
-@media(max-width:799px){
-  .container-c{
+/* CONTACT PAGE DISPLAY FOR TABLET & PHONE =<799PX */
+@media (max-width: 799px) {
+  .container-c {
     display: grid;
-    grid-template-columns:1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 12% 1fr 1fr 10%;
-    grid-template-areas: 
-    "header"
-    "aside"
-    "main"
-    "footer"
-    ;
-}
+    grid-template-areas:
+      "header"
+      "aside"
+      "main"
+      "footer";
+  }
 }
 
-@media(max-width:799px){
-  .map{
+/* CONTACT PAGE DISPLAY FOR TABLET & PHONE DECREASE MAP SIZE */
+@media (max-width: 799px) {
+  .map {
     height: 60vh;
-   }
-}
-
-.h2-a,
-.main-a,
-.main-c,
-.footer-a,
-.aside-c,
-.footer-c
-{
-  background-color: rgb(61, 85, 57);
+    margin-bottom: 15%;
+  }
 }

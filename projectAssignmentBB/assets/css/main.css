@@ -1,4 +1,4 @@
 @import url(./global.css);
 @import url(./layout.css);
 @import url(./typography.css);
-
+/* IMPORTING CSS FILES INTO main.css FOR EASY IMPORT INTO THE HTML FILES */

@@ -83,16 +83,13 @@
 
 .map {
   margin-top: 15px;
+  height: 70vh;
+  width: 70%;
 }
 
 .list-c {
   padding-left: 5%;
   padding-top: 2%;
-}
-
-.list-c legend {
-  padding-bottom: 1%;
-  font-size: 1.5em;
 }
 
 .list-c label {
@@ -116,6 +113,7 @@ button {
   text-transform: capitalize;
   background-color: rgb(192, 238, 194);
 }
+
 
 /* CONTACT PAGE DISPLAY FOR FULL PAGE OVER 800PX */
 @media (min-width: 800px) {
